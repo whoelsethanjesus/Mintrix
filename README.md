@@ -1,2 +1,2 @@
 # Mintrix
-by Janik Heiler, APR 2023
+by Janik Heiler, 2023
