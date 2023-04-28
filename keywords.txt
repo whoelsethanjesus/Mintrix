@@ -1,1 +1,6 @@
+# # # # # # # # # # # # # #
+# Mintrix by Janik Heiler #
+# # # # # # # # # # # # # #
 
+CMintrix	KEYWORD1
+Mintrix	KEYWORD1
