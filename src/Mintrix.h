@@ -6,7 +6,12 @@
 #ifndef MINTRIX_H
 #define MINTRIX_H
 
-#define MINTRIX_LIBRARY_VERSION 1
+#define MINTRIX_LIBRARY_VERSION "1.0.1"
+
+#if !defined(ESP8266)
+  #error Please install the ESP8266 board!
+// http://arduino.esp8266.com/stable/package_esp8266com_index.json
+#endif
 
 // include all necessary libraries
 #include "Arduino.h"           // standard arduino/esp things
