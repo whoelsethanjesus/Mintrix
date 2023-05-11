@@ -1,15 +1,15 @@
-/* * * * * * * * * * * * * * * *
- * Mintrix              v1.0.2 *
- *                             *
- *                Janik Heiler *
- * GitHub:   @whoelsethanjesus *
- * * * * * * * * * * * * * * * */
+/* * * * * * * * * * * * * * * * * * * *
+ *                                     *
+ *            M I N T R I X            *
+ *           by Janik Heiler           *
+ *                                     *
+ * * * * * * * * * * * * * * * * * * * */
 
 // prevents multiple inclusion
 #ifndef MINTRIX_H
 #define MINTRIX_H
 
-#define MINTRIX_LIBRARY_VERSION "v1.0.2"
+#define MINTRIX_LIBRARY_VERSION "v1.0.4"
 
 #if !defined(ESP8266)
   #error Please install the ESP8266 board!

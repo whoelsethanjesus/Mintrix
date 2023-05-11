@@ -1,9 +1,9 @@
-# # # # # # # # # # # # # # # #
-# Mintrix              v1.0.3 #
-#                             #
-#                Janik Heiler #
-# GitHub:   @whoelsethanjesus #
-# # # # # # # # # # # # # # # #
+# # # # # # # # # # # # # # # # # # # # #
+#                                       #
+#             M I N T R I X             #
+#            by Janik Heiler            #
+#                                       #
+# # # # # # # # # # # # # # # # # # # # #
 
 CMintrix	KEYWORD1
 Mintrix	KEYWORD1
