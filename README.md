@@ -1,2 +1,2 @@
 # Mintrix
-by Janik Heiler, 2023
+Mintrix v1.0.2 by Janik Heiler
