@@ -11,11 +11,6 @@
 
 #define MINTRIX_LIBRARY_VERSION "v1.0.4"
 
-#if !defined(ESP8266)
-  #error Please install the ESP8266 board!
-// http://arduino.esp8266.com/stable/package_esp8266com_index.json
-#endif
-
 // include all necessary libraries
 #include "Arduino.h"           // standard arduino/esp things
 #include "DNSServer.h"         // dns server -> "mintrix.home"
