@@ -42,6 +42,9 @@ void CMintrix::dynamicWiFi_start(String wifi_pswd)
 
 int CMintrix::dynamicWiFi_state()
 {
+	if(_mintrix_id_ > -1)
+		return _mintrix_id_;
+	
 	int wifi_scanComplete = WiFi.scanComplete();
 	if(wifi_scanComplete < 0)
 		return wifi_scanComplete; // -1: still searching, -2: hasnt started yet
@@ -59,6 +62,8 @@ int CMintrix::dynamicWiFi_state()
 	_wifi_ssid_ = (String)"Mintrix Nr. " + ((_mintrix_id_ < 10) ? "0" : "") + (String)_mintrix_id_;
 	if(_wifi_pswd_ == "") WiFi.softAP(_wifi_ssid_);
 	else                  WiFi.softAP(_wifi_ssid_, _wifi_pswd_);
+	
+	return _mintrix_id_;
 }
 
 void CMintrix::webStart()
