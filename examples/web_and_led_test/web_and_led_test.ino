@@ -1,6 +1,9 @@
-/* * * * * * * * * * * * * *
- * Mintrix by Janik Heiler *
- * * * * * * * * * * * * * */
+/* * * * * * * * * * * * * * * *
+ * Mintrix              v1.0.2 *
+ *                             *
+ *                Janik Heiler *
+ * GitHub:   @whoelsethanjesus *
+ * * * * * * * * * * * * * * * */
 
 #include <Mintrix.h>
 #include <MintrixWeb.h>
