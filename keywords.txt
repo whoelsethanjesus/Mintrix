@@ -1,5 +1,5 @@
 # # # # # # # # # # # # # # # #
-# Mintrix              v1.0.2 #
+# Mintrix              v1.0.3 #
 #                             #
 #                Janik Heiler #
 # GitHub:   @whoelsethanjesus #
