@@ -1,12 +1,15 @@
-/* * * * * * * * * * * * * *
- * Mintrix by Janik Heiler *
- * * * * * * * * * * * * * */
+/* * * * * * * * * * * * * * * *
+ * Mintrix              v1.0.2 *
+ *                             *
+ *                Janik Heiler *
+ * GitHub:   @whoelsethanjesus *
+ * * * * * * * * * * * * * * * */
 
 // prevents multiple inclusion
 #ifndef MINTRIX_H
 #define MINTRIX_H
 
-#define MINTRIX_LIBRARY_VERSION "1.0.1"
+#define MINTRIX_LIBRARY_VERSION "v1.0.2"
 
 #if !defined(ESP8266)
   #error Please install the ESP8266 board!
@@ -48,16 +51,22 @@ class CMintrix
 		const int height = 9;
 
 		// access leds via .leds[] or []
-		CRGB leds[81];
+		CRGB  leds[81];
 		CRGB& operator[](unsigned int i){return leds[i];}
 
-		// web server stuff
+		// some led operations
+		void show()  {FastLED.show();}
+		void clear() {FastLED.clear();}
+
+		// web server and web page
 		ESP8266WebServer server;
 		char * page_html = "";
 		char * style_css = "";
 		char * script_js = "";
 
 		CMintrix();
+
+		// things that ought to be looped
 		void loop() {_dns_server_.processNextRequest(); server.handleClient();};
 
 		// methods for opening wifi
@@ -65,13 +74,14 @@ class CMintrix
 		void dynamicWiFi_start(String wifi_pswd = "");
 		int  dynamicWiFi_state();
 
-		// set a webpage
+		// start web handling and (opt.) set website
 		void webStart();
 		void webPage(MintrixWeb::WebPage web_page);
 
-		// methods for using web server things
+		// handle incoming data from web
 		void onData(void (*data_handler)());
 
+		// access incoming data from web
 		String uri()                    {return server.uri();       };
 		String arg(const char *name)    {return server.arg(name);   };
 		String arg(int i)               {return server.arg(i);      };
@@ -79,12 +89,10 @@ class CMintrix
 		int    args()                   {return server.args();      };
 		bool   hasArg(const char *name) {return server.hasArg(name);};
 
+		// send response to incoming data from web
 		void send(int code, const char*    content_type = NULL, const String & content = String("")) {server.send(code, content_type, content);};
 		void send(int code, char*          content_type,        const String & content)              {server.send(code, content_type, content);};
 		void send(int code, const String & content_type,        const String & content)              {server.send(code, content_type, content);};
-		
-		void show() {FastLED.show();}
-
 };
 
 // makes the program aware of an externally declared class instance

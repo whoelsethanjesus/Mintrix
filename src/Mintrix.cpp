@@ -1,14 +1,19 @@
-/* * * * * * * * * * * * * *
- * Mintrix by Janik Heiler *
- * * * * * * * * * * * * * */
+/* * * * * * * * * * * * * * * *
+ * Mintrix              v1.0.2 *
+ *                             *
+ *                Janik Heiler *
+ * GitHub:   @whoelsethanjesus *
+ * * * * * * * * * * * * * * * */
 
 #include "Mintrix.h"
 
+// create mintrix instance
 CMintrix Mintrix;
 
+// initiate webserver and fastled
 CMintrix::CMintrix() : server(80)
 {
-	// start leds
+	// initiate fastled things
 	FastLED.addLeds<WS2812B, 2, GRB>(leds, 81);
 	FastLED.setBrightness(100);
 	FastLED.setCorrection(UncorrectedColor);
