@@ -84,3 +84,9 @@ void CMintrix::webPage(MintrixWeb::WebPage web_page)
 	server.on("/style.css", [](){Mintrix.server.send(200, "text/css",        Mintrix.style_css);});
 	server.on("/script.js", [](){Mintrix.server.send(200, "text/javascript", Mintrix.script_js);});
 }
+
+void CMintrix::onData(void (*data_handler)())
+{
+	server.on("/data",  data_handler);
+	server.on("/data/", data_handler);
+}
