@@ -6,7 +6,7 @@
  * * * * * * * * * * * * * * * * * * * */
 
 #include <Mintrix.h>
-#include <MintrixWeb.h>
+#define MINTRIX_HelloWorld
 
 int i = Mintrix.num_leds - 1;
 unsigned long t0;
