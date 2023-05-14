@@ -41,13 +41,13 @@ class CMintrix
 
 	public:
 		// pysical properties
-	    const int num_leds = 81;
+		const int num_leds = 81;
 		const int width = 9;
 		const int height = 9;
 
 		// access leds via .leds[] or []
 		CRGB  leds[81];
-		CRGB& operator[](unsigned int i){return leds[i];}
+		CRGB& operator[](unsigned int i) {return leds[i];}
 
 		// some led operations
 		void show()  {FastLED.show();}
