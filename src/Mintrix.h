@@ -9,7 +9,7 @@
 #ifndef MINTRIX_H
 #define MINTRIX_H
 
-#define MINTRIX_LIBRARY_VERSION "v1.0.5"
+#define MINTRIX_LIBRARY_VERSION "v1.0.6"
 
 // include all necessary libraries
 #include "Arduino.h"           // standard arduino/esp things
