@@ -17,7 +17,7 @@
 #include "ESP8266WebServer.h"  // web server
 #include "ESP8266WiFi.h"       // wifi module
 #include "FastLED.h"           // led controller
-#include "WiFiClient.h"        // other wifi stuff
+//#include "WiFiClient.h"        // other wifi stuff
 
 // definition of web page type
 namespace MintrixWeb {
