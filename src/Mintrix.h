@@ -68,6 +68,8 @@ class CMintrix
 		void staticWiFi(String wifi_ssid, String wifi_pswd = "");
 		void dynamicWiFi_start(String wifi_pswd = "");
 		int  dynamicWiFi_state();
+		
+		int id() {return _mintrix_id_;}
 
 		// start web handling and (opt.) set website
 		void webStart();
