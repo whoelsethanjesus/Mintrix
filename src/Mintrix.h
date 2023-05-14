@@ -28,6 +28,7 @@ namespace MintrixWeb {
 	} WebPage;
 }
 
+#include "MintrixWeb.h"
 
 // mintrix class
 class CMintrix
