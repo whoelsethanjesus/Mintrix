@@ -9,13 +9,16 @@
 #define MINTRIX_WEBFILES_H
 namespace MintrixWeb {
 
+#ifdef MINTRIX_HelloWorld
 WebPage HelloWorld = {
 	R"=====(<h1>Hello World!</h1>)=====",
 	R"=====()=====",
 	R"=====()====="
 };
+#endif
 
-WebPage Input_InputText = {
+#ifdef MINTRIX_InputText
+WebPage InputText = {
 	R"=====(<input onchange="send('text=' + this.value)"/>)=====",
 	R"=====()=====",
 	R"=====(
@@ -27,6 +30,7 @@ WebPage Input_InputText = {
 	}
 	)====="
 };
+#endif
 
 }
 #endif
