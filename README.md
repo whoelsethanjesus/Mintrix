@@ -1,5 +1,5 @@
 # Mintrix
-Mintrix v1.0.5 by Janik Heiler
+Mintrix v1.0.6 by Janik Heiler
 
 # Links
 Arduino Library List https://www.arduinolibraries.info/libraries/mintrix
